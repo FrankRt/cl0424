@@ -1,8 +1,10 @@
 package org.example.test4;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.test4.model.Holidays;
 import org.example.test4.repository.HolidaysRepository;
+import org.example.test4.repository.TooltypesRepository;
 import org.example.test4.utilities.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -15,9 +17,10 @@ import java.util.Date;
 
 @SpringBootApplication
 @Slf4j
+@AllArgsConstructor
 public class Test4Application implements CommandLineRunner {
-	@Autowired
-	private HolidaysRepository holidaysRepository;
+	private HolidaysRepository  holidaysRepository;
+	private TooltypesRepository tooltypesRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Test4Application.class, args);
@@ -25,11 +28,6 @@ public class Test4Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-//		log.info("Entered .....");
-//		log.info("Repo? " + holidaysRepository);
-//
-//		List<Holidays> hols = holidaysRepository.findAll();
-//		log.info("List? " + hols);
 		populateHolidays();
 	}
 
@@ -48,10 +46,10 @@ public class Test4Application implements CommandLineRunner {
 	}
 
 	private void populateIndependenceDay() {
-		holidaysRepository.save(new Holidays(null, Utils.getIndepenceDayObserved(Year.now())));
+		holidaysRepository.save(new Holidays(1, Utils.getIndepenceDayObserved(Year.now())));
 	}
 
 	private void populateLaborDay() {
-		holidaysRepository.save(new Holidays(null, Utils.getIndepenceDayObserved(Year.now())));
+		holidaysRepository.save(new Holidays(2, Utils.getIndepenceDayObserved(Year.now())));
 	}
 }

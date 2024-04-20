@@ -1,4 +1,6 @@
+org\example\test4\model\Tooltypes.class
 org\example\test4\utilities\Utils.class
+org\example\test4\repository\TooltypesRepository.class
 org\example\test4\model\Holidays.class
 org\example\test4\Test4Application.class
 org\example\test4\repository\HolidaysRepository.class

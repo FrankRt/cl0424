@@ -85,8 +85,8 @@ class DateUtilsTests {
 		assertEquals(7, labDay.getDayOfMonth());
 	}
 
-	@Test
-	void tst() {
-		log.info("All?? " + holidaysRepository.findAll());
-	}
+//	@Test
+//	void tst() {
+//		log.info("All?? " + holidaysRepository.findAll());
+//	}
 }

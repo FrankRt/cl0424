@@ -13,9 +13,9 @@ CREATE TABLE TOOL_TYPES (
     id INT AUTO_INCREMENT PRIMARY KEY,
     type VARCHAR(30) NOT NULL,
     daily_charge DOUBLE NOT NULL,
-    weekday_charge CHAR NOT NULL,
-    weekend_charge CHAR NOT NULL,
-    holiday_charge CHAR NOT NULL
+    weekday_charge BOOLEAN NOT NULL,
+    weekend_charge BOOLEAN NOT NULL,
+    holiday_charge BOOLEAN NOT NULL
 );
 
 CREATE TABLE HOLIDAYS (
