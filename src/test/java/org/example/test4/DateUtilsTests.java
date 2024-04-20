@@ -1,7 +1,7 @@
 package org.example.test4;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.test4.repository.HolidaysRepository;
+import org.example.test4.repository.HolidayRepository;
 import org.example.test4.utilities.Utils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Slf4j
 class DateUtilsTests {
 	@Autowired
-	private HolidaysRepository holidaysRepository;
+	private HolidayRepository holidaysRepository;
 
 	@Test
 	void contextLoads() {

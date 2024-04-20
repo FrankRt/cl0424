@@ -2,22 +2,21 @@ package org.example.test4;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.test4.model.Holidays;
-import org.example.test4.repository.HolidaysRepository;
-import org.example.test4.repository.ToolTypesRepository;
-import org.example.test4.repository.ToolsRepository;
-import org.example.test4.utilities.Utils;
+import org.example.test4.model.RentalAgreement;
+import org.example.test4.service.CheckoutService;
+import org.example.test4.service.HolidayService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.time.Year;
+import java.time.LocalDate;
 
 @SpringBootApplication
 @Slf4j
 @AllArgsConstructor
 public class Test4Application implements CommandLineRunner {
-	private HolidaysRepository  holidaysRepository;
+	private HolidayService  holidayService;
+	private CheckoutService checkoutService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Test4Application.class, args);
@@ -25,7 +24,14 @@ public class Test4Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		populateHolidays();
+		holidayService.populateHolidays();
+
+		try {
+			RentalAgreement ra = checkoutService.checkOut("CHNS", 1, 0, LocalDate.now());
+		} catch (Exception e) {
+			log.error("Error in processing: ");
+			log.error("  " + e.getMessage());
+		}
 	}
 
 	/**
@@ -37,16 +43,16 @@ public class Test4Application implements CommandLineRunner {
 	 * New Year's Day. Example: a 10 day rental including Christmas Day and New Year's Day and where those rental days
 	 * would be charge free.
 	 */
-	private void populateHolidays() {
-		populateIndependenceDay();
-		populateLaborDay();
-	}
-
-	private void populateIndependenceDay() {
-		holidaysRepository.save(new Holidays(1, Utils.getIndepenceDayObserved(Year.now())));
-	}
-
-	private void populateLaborDay() {
-		holidaysRepository.save(new Holidays(2, Utils.getLaborDay(Year.now())));
-	}
+//	private void populateHolidays() {
+//		populateIndependenceDay();
+//		populateLaborDay();
+//	}
+//
+//	private void populateIndependenceDay() {
+//		holidaysRepository.save(new Holiday(1, Utils.getIndepenceDayObserved(Year.now())));
+//	}
+//
+//	private void populateLaborDay() {
+//		holidaysRepository.save(new Holiday(2, Utils.getLaborDay(Year.now())));
+//	}
 }

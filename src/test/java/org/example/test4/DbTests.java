@@ -1,12 +1,16 @@
 package org.example.test4;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.test4.repository.HolidaysRepository;
-import org.example.test4.repository.ToolsRepository;
-import org.example.test4.repository.ToolTypesRepository;
+import org.example.test4.entity.Tool;
+import org.example.test4.entity.ToolType;
+import org.example.test4.repository.HolidayRepository;
+import org.example.test4.repository.ToolTypeRepository;
+import org.example.test4.repository.ToolRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,20 +18,44 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Slf4j
 class DbTests {
 	@Autowired
-	private HolidaysRepository  holidaysRepository;
+	private HolidayRepository holidaysRepository;
 
 	@Autowired
-	private ToolTypesRepository tooltypesRepository;
+	private ToolTypeRepository toolTypeRepository;
 
 	@Autowired
-	private ToolsRepository     toolsRepository;
+	private ToolRepository toolRepository;
 
 	@Test
-	void tst() {
+	public void printTables() {
 		holidaysRepository.findAll().stream().forEach(h -> log.info("Holiday: " + h));
-		tooltypesRepository.findAll().stream().forEach(tt -> log.info("ToolType: " + tt));
-		toolsRepository.findAll().forEach(t -> log.info("Tool: " + t));
-//		log.info("Tooltypes: " + tooltypesRepository.findAll());
-//		log.info("Tools: " +
+		toolTypeRepository.findAll().stream().forEach(tt -> log.info("ToolType: " + tt));
+		toolRepository.findAll().forEach(t -> log.info("Tool: " + t));
+	}
+
+	@Test
+	public void testToolCode_CHNS() {
+		List<Tool> toolsForCode = toolRepository.findByToolCode("CHNS");
+		assert(toolsForCode.size() == 1);
+
+		Tool tool = toolsForCode.get(0);
+		assertEquals(1, tool.getId());
+		assertEquals("Stihl", tool.getBrand());
+
+		ToolType tType = tool.getToolType();
+		assert(tType != null);
+	}
+
+	@Test
+	public void testToolCode_JAKD() {
+		List<Tool> toolsForCode = toolRepository.findByToolCode("JAKD");
+		assert(toolsForCode.size() == 1);
+
+		Tool tool = toolsForCode.get(0);
+		assertEquals(3, tool.getId());
+		assertEquals("DeWalt", tool.getBrand());
+
+		ToolType tType = tool.getToolType();
+		assert(tType != null);
 	}
 }

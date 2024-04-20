@@ -1,7 +1,7 @@
 package org.example.test4;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.test4.repository.HolidaysRepository;
+import org.example.test4.repository.HolidayRepository;
 import org.example.test4.utilities.Utils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.time.Year;
 @Slf4j
 class Test4ApplicationTests {
 	@Autowired
-	private HolidaysRepository holidaysRepository;
+	private HolidayRepository holidaysRepository;
 
 	@Test
 	void contextLoads() {
