@@ -4,23 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.test4.model.Holidays;
 import org.example.test4.repository.HolidaysRepository;
-import org.example.test4.repository.TooltypesRepository;
+import org.example.test4.repository.ToolTypesRepository;
+import org.example.test4.repository.ToolsRepository;
 import org.example.test4.utilities.Utils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.time.LocalDate;
 import java.time.Year;
-import java.util.Date;
 
 @SpringBootApplication
 @Slf4j
 @AllArgsConstructor
 public class Test4Application implements CommandLineRunner {
 	private HolidaysRepository  holidaysRepository;
-	private TooltypesRepository tooltypesRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Test4Application.class, args);
@@ -50,6 +47,6 @@ public class Test4Application implements CommandLineRunner {
 	}
 
 	private void populateLaborDay() {
-		holidaysRepository.save(new Holidays(2, Utils.getIndepenceDayObserved(Year.now())));
+		holidaysRepository.save(new Holidays(2, Utils.getLaborDay(Year.now())));
 	}
 }
