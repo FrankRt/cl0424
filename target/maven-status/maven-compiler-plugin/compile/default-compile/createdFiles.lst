@@ -1,6 +1,7 @@
 org\example\test4\entity\ToolType.class
 org\example\test4\exception\RentalPeriodOutOfRangeException.class
 org\example\test4\repository\ToolTypeRepository.class
+org\example\test4\service\HolidayService.class
 org\example\test4\exception\NoSuchToolCodeException.class
 org\example\test4\exception\RentalStartDateException.class
 org\example\test4\repository\HolidayRepository.class

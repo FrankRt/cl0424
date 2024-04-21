@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.test4.model.RentalAgreement;
 import org.example.test4.service.CheckoutService;
-import org.example.test4.service.HolidayService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +14,6 @@ import java.time.LocalDate;
 @Slf4j
 @AllArgsConstructor
 public class Test4Application implements CommandLineRunner {
-	private HolidayService  holidayService;
 	private CheckoutService checkoutService;
 
 	public static void main(String[] args) {
@@ -23,36 +21,28 @@ public class Test4Application implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
-		holidayService.populateHolidays();
+	public void run(String... args) {
+		checkoutService.checkOutAndPrint("JAKR", 5, 101,
+			LocalDate.of(2015, 9, 3));
 
-		try {
-			RentalAgreement ra = checkoutService.checkOut("CHNS", 1, 0, LocalDate.now());
-		} catch (Exception e) {
-			log.error("Error in processing: ");
-			log.error("  " + e.getMessage());
-		}
+		System.out.println(" ");
+		checkoutService.checkOutAndPrint("LADW", 3, 10,
+			LocalDate.of(2020, 7, 2));
+
+		System.out.println(" ");
+		checkoutService.checkOutAndPrint("CHNS", 5, 25,
+			LocalDate.of(2015, 7, 2));
+
+		System.out.println(" ");
+		checkoutService.checkOutAndPrint("JAKD", 5, 0,
+			LocalDate.of(2015, 9, 3));
+
+		System.out.println(" ");
+		checkoutService.checkOutAndPrint("JAKR", 9, 0,
+			LocalDate.of(2015, 7, 2));
+
+		System.out.println(" ");
+		checkoutService.checkOutAndPrint("JAKR", 4, 50,
+			LocalDate.of(2020, 7, 2));
 	}
-
-	/**
-	 * Populating ONLY Independence and Labor days in the HOLIDAYS
-	 * table for the current year.
-	 *
-	 * @Todo Make this more general where we'd input a list of holidays for a year, then populate all. In fact we may
-	 * need multiple years (but no more than two) in the HOLIDAYS table for when rentals would extend over and including
-	 * New Year's Day. Example: a 10 day rental including Christmas Day and New Year's Day and where those rental days
-	 * would be charge free.
-	 */
-//	private void populateHolidays() {
-//		populateIndependenceDay();
-//		populateLaborDay();
-//	}
-//
-//	private void populateIndependenceDay() {
-//		holidaysRepository.save(new Holiday(1, Utils.getIndepenceDayObserved(Year.now())));
-//	}
-//
-//	private void populateLaborDay() {
-//		holidaysRepository.save(new Holiday(2, Utils.getLaborDay(Year.now())));
-//	}
 }

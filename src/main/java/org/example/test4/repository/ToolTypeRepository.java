@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ToolTypeRepository extends JpaRepository<ToolType, Integer> {
-//    List<Tutorial> findByPublished(boolean published);
-//    List<Tutorial> findByTitleContaining(String title);
 }

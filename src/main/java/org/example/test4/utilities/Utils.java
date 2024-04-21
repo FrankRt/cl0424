@@ -4,6 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Year;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public final class Utils {
@@ -36,5 +37,26 @@ public final class Utils {
 
         // Will never get here unless number of days per week is changed from 7 :)
         return null;
+    }
+
+    public static String formatDate(LocalDate date) {
+        DateTimeFormatter pattern = DateTimeFormatter.ofPattern("MM/dd/YY");
+        return date.format(pattern);
+    }
+
+    public static String formatCurrency(double amt) {
+        String valStr = Double.toString(Math.round(amt * 100.0) / 100.0);
+
+        // Add trailing 0 if needed
+        // 0.6 --> . at 1, length = 3
+        if (valStr.indexOf(".") == valStr.length()-2) {
+            valStr += "0";
+        }
+
+        return "$" + valStr;
+    }
+
+    public static String formatPercent(int amt) {
+        return amt + "%";
     }
 }

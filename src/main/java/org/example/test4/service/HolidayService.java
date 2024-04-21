@@ -7,6 +7,7 @@ import org.example.test4.utilities.Utils;
 import org.springframework.stereotype.Service;
 
 import java.time.Year;
+import java.util.List;
 
 @Service
 @AllArgsConstructor
@@ -22,16 +23,31 @@ public class HolidayService {
      * New Year's Day. Example: a 10 day rental including Christmas Day and New Year's Day and where those rental days
      * would be charge free.
      */
-    public void populateHolidays() {
-        populateIndependenceDay();
-        populateLaborDay();
+    public void populateHolidays(int year) {
+        // First see if already populated. If so simply return.
+        List<Holiday> holidays = holidayRepository.findByYrOrderByDate(year);
+        if (holidays.size() > 0) {
+            // Already populated, don't add more rows.
+            return;
+        }
+
+        populateIndependenceDay(year);
+        populateLaborDay(year);
     }
 
-    private void populateIndependenceDay() {
-        holidayRepository.save(new Holiday(1, Utils.getIndepenceDayObserved(Year.now())));
+    private void populateIndependenceDay(int year) {
+        holidayRepository.save(new Holiday(null, year, Utils.getIndepenceDayObserved(Year.of(year))));
     }
 
-    private void populateLaborDay() {
-        holidayRepository.save(new Holiday(2, Utils.getLaborDay(Year.now())));
+    private void populateLaborDay(int year) {
+        holidayRepository.save(new Holiday(null, year, Utils.getLaborDay(Year.of(year))));
+    }
+
+    public List<Holiday> getAllHolidays() {
+        return holidayRepository.findAll();
+    }
+
+    public List<Holiday> getHolidaysForYear(int year) {
+        return holidayRepository.findByYrOrderByDate(year);
     }
 }

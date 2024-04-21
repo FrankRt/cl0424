@@ -1,6 +1,8 @@
 org\example\test4\CheckoutServiceDiscountTests.class
 org\example\test4\CheckoutServiceToolCodeTests.class
 org\example\test4\DateUtilsTests.class
+org\example\test4\HolidayServiceTests.class
+org\example\test4\RentalAgreementServiceTests.class
 org\example\test4\CheckoutServiceRentalPeriodTests.class
 org\example\test4\Test4ApplicationTests.class
 org\example\test4\DbTests.class

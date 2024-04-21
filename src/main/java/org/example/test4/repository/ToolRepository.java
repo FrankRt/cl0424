@@ -8,8 +8,5 @@ import java.util.List;
 
 @Repository
 public interface ToolRepository extends JpaRepository<Tool, Integer> {
-    List<Tool> findByToolCode(String chns);
-
-//    List<Tutorial> findByPublished(boolean published);
-//    List<Tutorial> findByTitleContaining(String title);
+    public List<Tool> findByToolCode(String chns);
 }

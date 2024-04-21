@@ -8,3 +8,4 @@ INSERT INTO TOOL VALUES (3, 'JAKD', 3, 'DeWalt');
 INSERT INTO TOOL VALUES (4, 'JAKR', 3, 'Ridgid');
 
 
+

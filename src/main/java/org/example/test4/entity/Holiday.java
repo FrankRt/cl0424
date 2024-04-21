@@ -21,5 +21,6 @@ public class Holiday {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    private Integer yr;
     private LocalDate date;
 }
