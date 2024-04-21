@@ -35,18 +35,30 @@ public class HolidayService {
         populateLaborDay(year);
     }
 
+    /**
+     * Persist July 4th, but if on weekend, then move to nearer of Friday, or Monday.
+     *
+     * @param year
+     */
     private void populateIndependenceDay(int year) {
         holidayRepository.save(new Holiday(null, year, Utils.getIndepenceDayObserved(Year.of(year))));
     }
 
+    /**
+     * Persist date of 1st Monday in September.
+     *
+     * @param year
+     */
     private void populateLaborDay(int year) {
         holidayRepository.save(new Holiday(null, year, Utils.getLaborDay(Year.of(year))));
     }
 
-    public List<Holiday> getAllHolidays() {
-        return holidayRepository.findAll();
-    }
-
+    /**
+     * Query the Holiday table for the 2 holidays for the given year.
+     *
+     * @param year
+     * @return - A list of the 2 holidays for the given year.
+     */
     public List<Holiday> getHolidaysForYear(int year) {
         return holidayRepository.findByYrOrderByDate(year);
     }

@@ -33,7 +33,7 @@ public class CheckoutService {
     public void checkOutAndPrint(String toolCode, int rentalDayCount, int discountPct, LocalDate startDate) {
         try {
             RentalAgreement ra = checkOut(toolCode, rentalDayCount, discountPct, startDate);
-            log.info(ra.toString());
+            System.out.println(ra.toString());
         } catch (Exception e) {
             System.out.println("Error in processing: ");
             System.out.println("  " + e.getMessage());
@@ -67,7 +67,8 @@ public class CheckoutService {
     }
 
     /**
-     * Must supply a start date
+     * Must supply a start date.
+     *
      * @param startDate
      * @throws RentalStartDateException
      */
@@ -109,7 +110,7 @@ public class CheckoutService {
     }
 
     /**
-     * Get the tool, and if not found throw an exception
+     * Get the tool by code, and if not found throw an exception.
      *
      * @param toolCode - String used to look up tool in Tool table
      * @return found tool
