@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.test4.CheckoutServiceDiscountTests" time="6.616" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.test4.CheckoutServiceDiscountTests" time="5.914" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Amazon Corretto\jdk17.0.10_7\bin"/>
-    <property name="sun.java.command" value="C:\Users\Craig\AppData\Local\Temp\surefire16052022395118481305\surefirebooter-20240420221802981_3.jar C:\Users\Craig\AppData\Local\Temp\surefire16052022395118481305 2024-04-20T22-18-02_715-jvmRun1 surefire-20240420221802981_1tmp surefire_0-20240420221802981_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Craig\AppData\Local\Temp\surefire1508622468839518358\surefirebooter-20240421134309113_3.jar C:\Users\Craig\AppData\Local\Temp\surefire1508622468839518358 2024-04-21T13-43-08_886-jvmRun1 surefire-20240421134309113_1tmp surefire_0-20240421134309113_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Craig\OneDrive\Documents\Training - Education\CardinalFinancial\test4\target\test-classes;C:\Users\Craig\OneDrive\Documents\Training - Education\CardinalFinancial\test4\target\classes;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\Craig\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\Craig\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\Craig\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Craig\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Craig\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Craig\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Craig\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Craig\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Craig\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Craig\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\Craig\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Craig\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Craig\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Craig\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Craig\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Craig\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Craig\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Craig\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\Craig\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\Craig\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\Craig\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Craig\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\Craig\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Craig\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\Craig\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Craig\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Craig\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Craig\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Craig\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\Craig\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\Craig\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\Craig\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Craig\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Craig\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Craig\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Craig\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Craig\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Craig\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Craig\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\Craig\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Craig\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Craig\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Craig\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Craig\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Craig\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Craig\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Craig\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Craig\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Craig\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Craig\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\Craig\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Craig\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Craig\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Craig\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\Craig\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\Craig\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="windows-1252"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\Craig\AppData\Local\Temp\surefire16052022395118481305\surefirebooter-20240420221802981_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Craig\AppData\Local\Temp\surefire1508622468839518358\surefirebooter-20240421134309113_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+7-LTS"/>
@@ -52,7 +52,7 @@
     <property name="user.dir" value="C:\Users\Craig\OneDrive\Documents\Training - Education\CardinalFinancial\test4"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="13948"/>
+    <property name="PID" value="14296"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
     <property name="native.encoding" value="Cp1252"/>
@@ -64,9 +64,9 @@
     <property name="java.class.version" value="61.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[test4] "/>
   </properties>
-  <testcase name="testCheckOut_DiscountOf_0" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.579">
-    <system-out><![CDATA[22:18:04.242 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.test4.CheckoutServiceDiscountTests]: CheckoutServiceDiscountTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-22:18:04.387 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.test4.Test4Application for test class org.example.test4.CheckoutServiceDiscountTests
+  <testcase name="testCheckOut_DiscountOf_0" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.546">
+    <system-out><![CDATA[13:43:10.222 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.test4.CheckoutServiceDiscountTests]: CheckoutServiceDiscountTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:43:10.372 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.test4.Test4Application for test class org.example.test4.CheckoutServiceDiscountTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -76,24 +76,25 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2024-04-20T22:18:05.046-05:00  INFO 13948 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : Starting CheckoutServiceDiscountTests using Java 17.0.10 with PID 13948 (started by Craig in C:\Users\Craig\OneDrive\Documents\Training - Education\CardinalFinancial\test4)
-2024-04-20T22:18:05.047-05:00  INFO 13948 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : No active profile set, falling back to 1 default profile: "default"
-2024-04-20T22:18:05.660-05:00  INFO 13948 --- [test4] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-20T22:18:05.754-05:00  INFO 13948 --- [test4] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
-2024-04-20T22:18:06.334-05:00  INFO 13948 --- [test4] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-20T22:18:06.653-05:00  INFO 13948 --- [test4] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:toolsdb user=SA
-2024-04-20T22:18:06.655-05:00  INFO 13948 --- [test4] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-20T22:18:06.742-05:00  INFO 13948 --- [test4] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-20T22:18:06.854-05:00  INFO 13948 --- [test4] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-20T22:18:06.919-05:00  INFO 13948 --- [test4] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-20T22:18:07.339-05:00  INFO 13948 --- [test4] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-20T22:18:08.825-05:00  INFO 13948 --- [test4] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-20T22:18:08.888-05:00  INFO 13948 --- [test4] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-20T22:18:09.615-05:00  INFO 13948 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : Started CheckoutServiceDiscountTests in 4.987 seconds (process running for 6.479)
+2024-04-21T13:43:10.951-05:00  INFO 14296 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : Starting CheckoutServiceDiscountTests using Java 17.0.10 with PID 14296 (started by Craig in C:\Users\Craig\OneDrive\Documents\Training - Education\CardinalFinancial\test4)
+2024-04-21T13:43:10.953-05:00  INFO 14296 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : No active profile set, falling back to 1 default profile: "default"
+2024-04-21T13:43:11.499-05:00  INFO 14296 --- [test4] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-21T13:43:11.583-05:00  INFO 14296 --- [test4] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2024-04-21T13:43:12.099-05:00  INFO 14296 --- [test4] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-21T13:43:12.376-05:00  INFO 14296 --- [test4] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:toolsdb user=SA
+2024-04-21T13:43:12.378-05:00  INFO 14296 --- [test4] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-21T13:43:12.458-05:00  INFO 14296 --- [test4] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-21T13:43:12.563-05:00  INFO 14296 --- [test4] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-21T13:43:12.616-05:00  INFO 14296 --- [test4] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-21T13:43:13.017-05:00  INFO 14296 --- [test4] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-21T13:43:14.267-05:00  INFO 14296 --- [test4] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-21T13:43:14.323-05:00  INFO 14296 --- [test4] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-21T13:43:14.983-05:00  INFO 14296 --- [test4] [           main] o.e.test4.CheckoutServiceDiscountTests   : Started CheckoutServiceDiscountTests in 4.396 seconds (process running for 5.746)
 Error in processing: 
   Discount percent of 101 must be between 0 and 100
  
-2024-04-20T22:18:10.015-05:00  INFO 13948 --- [test4] [           main] o.example.test4.service.CheckoutService  : Tool type: Ladder
+
+Tool type: Ladder
 Tool code: LADW
 Tool brand: Werner
 Rental days: 3
@@ -106,7 +107,8 @@ Discount percent: 10%
 Discount amount: $0.40
 Final charge: $3.58
  
-2024-04-20T22:18:10.028-05:00  INFO 13948 --- [test4] [           main] o.example.test4.service.CheckoutService  : Tool type: Chainsaw
+
+Tool type: Chainsaw
 Tool code: CHNS
 Tool brand: Stihl
 Rental days: 5
@@ -118,9 +120,51 @@ Pre-discount charge: $5.96
 Discount percent: 25%
 Discount amount: $1.49
 Final charge: $4.47
+ 
+
+Tool type: Jackhammer
+Tool code: JAKD
+Tool brand: DeWalt
+Rental days: 5
+Check out date: 09/03/15
+Due date: 09/08/15
+Daily rental charge: $2.99
+Charge days: 4
+Pre-discount charge: $11.96
+Discount percent: 0%
+Discount amount: $0.00
+Final charge: $11.96
+ 
+
+Tool type: Jackhammer
+Tool code: JAKR
+Tool brand: Ridgid
+Rental days: 9
+Check out date: 07/02/15
+Due date: 07/11/15
+Daily rental charge: $2.99
+Charge days: 8
+Pre-discount charge: $23.92
+Discount percent: 0%
+Discount amount: $0.00
+Final charge: $23.92
+ 
+
+Tool type: Jackhammer
+Tool code: JAKR
+Tool brand: Ridgid
+Rental days: 4
+Check out date: 07/02/20
+Due date: 07/06/20
+Daily rental charge: $2.99
+Charge days: 3
+Pre-discount charge: $8.97
+Discount percent: 50%
+Discount amount: $4.49
+Final charge: $4.48
 ]]></system-out>
   </testcase>
-  <testcase name="testCheckOut_DiscountOf_100" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.01"/>
-  <testcase name="testCheckOut_DiscountOf_negative" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.006"/>
+  <testcase name="testCheckOut_DiscountOf_100" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.014"/>
+  <testcase name="testCheckOut_DiscountOf_negative" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.007"/>
   <testcase name="testCheckOut_DiscountOf_greaterThan100" classname="org.example.test4.CheckoutServiceDiscountTests" time="0.005"/>
 </testsuite>

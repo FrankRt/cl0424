@@ -6,4 +6,5 @@ org\example\test4\RentalAgreementServiceTests.class
 org\example\test4\CheckoutServiceRentalPeriodTests.class
 org\example\test4\Test4ApplicationTests.class
 org\example\test4\DbTests.class
+org\example\test4\EndToEndTests.class
 org\example\test4\CheckoutServiceStartDateTests.class
